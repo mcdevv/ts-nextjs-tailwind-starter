@@ -3,6 +3,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 
+import ColorChanger from '@/components/color-changer';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
@@ -57,6 +58,8 @@ export default function HomePage() {
               alt='Deploy with Vercel'
             />
           </UnstyledLink>
+
+          <ColorChanger />
 
           <footer className='absolute bottom-2 text-gray-700'>
             © {new Date().getFullYear()} By{' '}
